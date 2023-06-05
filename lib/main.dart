@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rive/rive.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,11 +21,15 @@ class _MyAppState extends State<MyApp> {
     'lib/images/shocked_fruit.png',
   ];
 
+  List<String> images3 = [
+    'lib/images/pimpleface.png',
+  ];
+
   late List<List<String>> allImages;
   int currentListIndex = 0;
 
   _MyAppState() {
-    allImages = [images, images2];
+    allImages = [images, images2, images3];
   }
 
   void changeImage() {
@@ -38,7 +41,8 @@ class _MyAppState extends State<MyApp> {
   void changeAvatar() {
     setState(() {
       imageIndex = 0; // Set the image index to 0
-      currentListIndex = (currentListIndex + 1) % allImages.length; // Switch between the lists
+      currentListIndex =
+          (currentListIndex + 1) % allImages.length; // Switch between the lists
     });
   }
 
@@ -65,9 +69,11 @@ class _MyAppState extends State<MyApp> {
                   );
                 },
                 child: CircleAvatar(
-                  key: ValueKey<String>(allImages[currentListIndex][imageIndex]),
+                  key:
+                      ValueKey<String>(allImages[currentListIndex][imageIndex]),
                   radius: 80,
-                  backgroundImage: AssetImage(allImages[currentListIndex][imageIndex]),
+                  backgroundImage:
+                      AssetImage(allImages[currentListIndex][imageIndex]),
                 ),
               ),
               SizedBox(height: 20),
@@ -78,6 +84,31 @@ class _MyAppState extends State<MyApp> {
               ElevatedButton(
                 onPressed: changeAvatar,
                 child: Text('Change Avatar'),
+              ),
+              CircleAvatar(
+                key: ValueKey<String>(allImages[currentListIndex][imageIndex]),
+                radius: 80,
+                child: Stack(children: <Widget>[
+                  Image.asset('lib/images/straightface.png'),
+                  Positioned(
+                    top: 15,
+                    left: 30,
+                    child: Image.asset(
+                      'lib/images/animatedsunglasseswithoutbackground.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                  ),
+                  Positioned(
+                    top: -10,
+                    left: 50,
+                    child: Image.asset(
+                      'lib/images/crowns/red_jeweled_crown.png',
+                      width: 50,
+                      height: 40,
+                    ),
+                  ),
+                ]),
               ),
             ],
           ),
