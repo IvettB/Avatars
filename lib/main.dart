@@ -99,15 +99,6 @@ class _MyAppState extends State<MyApp> {
                       height: 100,
                     ),
                   ),
-                  Positioned(
-                    top: -10,
-                    left: 50,
-                    child: Image.asset(
-                      'lib/images/crowns/red_jeweled_crown.png',
-                      width: 50,
-                      height: 40,
-                    ),
-                  ),
                 ]),
               ),
             ],
