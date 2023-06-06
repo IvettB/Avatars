@@ -94,7 +94,7 @@ class _MyAppState extends State<MyApp> {
                     top: 15,
                     left: 30,
                     child: Image.asset(
-                      'lib/images/animatedsunglasseswithoutbackground.png',
+                      'lib/images/glasses/animatedsunglasseswithoutbackground.png',
                       width: 100,
                       height: 100,
                     ),
