@@ -100,12 +100,12 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   Positioned(
-                    top: 55,
-                    left: 30,
+                    top: 75,
+                    left: 45,
                     child: Image.asset(
                       //absolute path to image on my computer(tanner) the relative path wasn't working. Needs more debugging.
                       'lib/images/pimples/avatar-pimples-1.png',
-                      width: 50,
+                      width: 20,
                       height: 50,
                     ),
                   ),
