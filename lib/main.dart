@@ -104,7 +104,7 @@ class _MyAppState extends State<MyApp> {
                     left: 30,
                     child: Image.asset(
                       //absolute path to image on my computer(tanner) the relative path wasn't working. Needs more debugging.
-                      '/Users/tannermontgomery/avatar_demo/lib/images/pimples/avatar-pimples-1.png',
+                      'lib/images/pimples/avatar-pimples-1.png',
                       width: 50,
                       height: 50,
                     ),
