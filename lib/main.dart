@@ -89,7 +89,7 @@ class _MyAppState extends State<MyApp> {
                 key: ValueKey<String>(allImages[currentListIndex][imageIndex]),
                 radius: 80,
                 child: Stack(children: <Widget>[
-                  Image.asset('lib/images/straightface.png'),
+                  Image.asset('lib/images/people/straightface.png'),
                   Positioned(
                     top: 15,
                     left: 30,

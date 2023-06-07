@@ -65,6 +65,7 @@ flutter:
    - lib/images/pimples/
    - lib/images/crowns/
    - lib/images/glasses/
+   - lib/images/people/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
