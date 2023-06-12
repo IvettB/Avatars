@@ -12,6 +12,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int imageIndex = 0;
   int imageIndex2 = 0;
+  bool areGlassesVisible = false;
   List<String> avatars = [
     'lib/images/people/1.png',
     'lib/images/people/2.png',
@@ -54,6 +55,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  void toggleGlasses() {
+    setState(() {
+      areGlassesVisible = !areGlassesVisible;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -76,10 +83,13 @@ class _MyAppState extends State<MyApp> {
                     width: 200,
                     height: 200,
                   ),
-                  Image.asset(
-                    glasses[imageIndex2],
-                    width: 200,
-                    height: 200,
+                  AnimatedOpacity(
+                    opacity: areGlassesVisible ? 1.0 : 0.0,
+                    duration: Duration(milliseconds: 500),
+                    child: Visibility(
+                        visible: areGlassesVisible,
+                        child: Image.asset(glasses[imageIndex2],
+                            width: 200, height: 200)),
                   ),
                 ],
               ),
@@ -90,7 +100,12 @@ class _MyAppState extends State<MyApp> {
               ),
               ElevatedButton(
                 onPressed: changeGlasses,
-                child: Text('Add Glasses'),
+                child: Text('Change Glasses'),
+              ),
+              ElevatedButton(
+                onPressed: toggleGlasses,
+                child:
+                    Text(areGlassesVisible ? 'Remove Glasses' : 'Add Glasses'),
               ),
             ],
           ),
