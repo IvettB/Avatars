@@ -11,9 +11,19 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int imageIndex = 0;
-  List<String> images = [
-    'lib/images/happy_vegetable.png',
-    'lib/images/sad_vegetable.png',
+  int imageIndex2 = 0;
+  List<String> avatars = [
+    'lib/images/people/1.png',
+    'lib/images/people/2.png',
+    'lib/images/people/3.png',
+    'lib/images/people/4.png',
+    'lib/images/people/5.png',
+    'lib/images/people/6.png',
+    'lib/images/people/7.png',
+    'lib/images/people/8.png',
+    'lib/images/people/9.png',
+    'lib/images/people/10.png',
+    'lib/images/people/11.png',
   ];
 
   List<String> glasses = [
