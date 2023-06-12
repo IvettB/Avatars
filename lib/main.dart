@@ -11,39 +11,36 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int imageIndex = 0;
-  bool isChecked = false;
   List<String> images = [
     'lib/images/happy_vegetable.png',
     'lib/images/sad_vegetable.png',
   ];
 
-  List<String> images2 = [
-    'lib/images/mean_fruit.png',
-    'lib/images/shocked_fruit.png',
-  ];
-
-  List<String> images3 = [
-    'lib/images/pimpleface.png',
+  List<String> glasses = [
+    'lib/images/glasses/1.png',
+    'lib/images/glasses/2.png',
+    'lib/images/glasses/3.png',
+    'lib/images/glasses/4.png',
+    'lib/images/glasses/5.png',
+    'lib/images/glasses/6.png',
   ];
 
   late List<List<String>> allImages;
   int currentListIndex = 0;
 
   _MyAppState() {
-    allImages = [images, images2, images3];
+    allImages = [avatars];
   }
 
   void changeImage() {
     setState(() {
-      imageIndex = (imageIndex + 1) % allImages[currentListIndex].length;
+      imageIndex = (imageIndex + 1) % avatars.length;
     });
   }
 
-  void changeAvatar() {
+  void changeGlasses() {
     setState(() {
-      imageIndex = 0; // Set the image index to 0
-      currentListIndex =
-          (currentListIndex + 1) % allImages.length; // Switch between the lists
+      imageIndex2 = (imageIndex2 + 1) % glasses.length;
     });
   }
 
@@ -61,21 +58,20 @@ class _MyAppState extends State<MyApp> {
           padding: const EdgeInsets.only(top: 100),
           child: Column(
             children: [
-              AnimatedSwitcher(
-                duration: const Duration(milliseconds: 500),
-                transitionBuilder: (Widget child, Animation<double> animation) {
-                  return FadeTransition(
-                    opacity: animation,
-                    child: child,
-                  );
-                },
-                child: CircleAvatar(
-                  key:
-                      ValueKey<String>(allImages[currentListIndex][imageIndex]),
-                  radius: 80,
-                  backgroundImage:
-                      AssetImage(allImages[currentListIndex][imageIndex]),
-                ),
+              Stack(
+                alignment: Alignment.center,
+                children: [
+                  Image.asset(
+                    avatars[imageIndex],
+                    width: 200,
+                    height: 200,
+                  ),
+                  Image.asset(
+                    glasses[imageIndex2],
+                    width: 200,
+                    height: 200,
+                  ),
+                ],
               ),
               SizedBox(height: 20),
               ElevatedButton(
@@ -83,34 +79,8 @@ class _MyAppState extends State<MyApp> {
                 child: Text('Change Image'),
               ),
               ElevatedButton(
-                onPressed: changeAvatar,
-                child: Text('Change Avatar'),
-              ),
-              CircleAvatar(
-                key: ValueKey<String>(allImages[currentListIndex][imageIndex]),
-                radius: 80,
-                child: Stack(children: <Widget>[
-                  Image.asset('lib/images/people/straightface.png'),
-                  Positioned(
-                    top: 15,
-                    left: 30,
-                    child: Image.asset(
-                      'lib/images/glasses/animatedsunglasseswithoutbackground.png',
-                      width: 100,
-                      height: 100,
-                    ),
-                  ),
-                  Positioned(
-                    top: 75,
-                    left: 45,
-                    child: Image.asset(
-                      //absolute path to image on my computer(tanner) the relative path wasn't working. Needs more debugging.
-                      'lib/images/pimples/avatar-pimples-1.png',
-                      width: 20,
-                      height: 50,
-                    ),
-                  ),
-                ]),
+                onPressed: changeGlasses,
+                child: Text('Add Glasses'),
               ),
             ],
           ),
