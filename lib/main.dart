@@ -11,6 +11,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int imageIndex = 0;
+  bool isChecked = false;
   List<String> images = [
     'lib/images/happy_vegetable.png',
     'lib/images/sad_vegetable.png',
