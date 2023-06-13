@@ -13,8 +13,10 @@ class _MyAppState extends State<MyApp> {
   int imageIndex = 0;
   int imageIndex2 = 0;
   int imageIndex3 = 0;
+  int imageIndex4 = 0;
   bool areGlassesVisible = false;
   bool isCrownVisible = false;
+  bool isPimpleVisible = false;
   List<String> avatars = [
     'lib/images/people/1.png',
     'lib/images/people/2.png',
@@ -45,6 +47,14 @@ class _MyAppState extends State<MyApp> {
     'lib/images/crowns/4.png',
   ];
 
+  List<String> pimples = [
+    'lib/images/pimples/1.png',
+    'lib/images/pimples/2.png',
+    'lib/images/pimples/3.png',
+    'lib/images/pimples/4.png',
+    'lib/images/pimples/5.png',
+  ];
+
   late List<List<String>> allImages;
   int currentListIndex = 0;
 
@@ -70,6 +80,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  void changePimples() {
+    setState(() {
+      imageIndex4 = (imageIndex4 + 1) % pimples.length;
+    });
+  }
+
   void toggleGlasses() {
     setState(() {
       areGlassesVisible = !areGlassesVisible;
@@ -79,6 +95,12 @@ class _MyAppState extends State<MyApp> {
   void toggleCrowns() {
     setState(() {
       isCrownVisible = !isCrownVisible;
+    });
+  }
+
+  void togglePimples() {
+    setState(() {
+      isPimpleVisible = !isPimpleVisible;
     });
   }
 
@@ -128,6 +150,18 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
+                  AnimatedOpacity(
+                    opacity: isPimpleVisible ? 1.0 : 0.0,
+                    duration: Duration(milliseconds: 500),
+                    child: Visibility(
+                      visible: isPimpleVisible,
+                      child: Transform.translate(
+                        offset: Offset(-40.0, 35.0),
+                        child: Image.asset(pimples[imageIndex4],
+                            width: 20, height: 25),
+                      ),
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 20),
@@ -144,6 +178,10 @@ class _MyAppState extends State<MyApp> {
                 child: Text('Change Crown'),
               ),
               ElevatedButton(
+                onPressed: changePimples,
+                child: Text('Change Pimple'),
+              ),
+              ElevatedButton(
                 onPressed: toggleGlasses,
                 child:
                     Text(areGlassesVisible ? 'Remove Glasses' : 'Add Glasses'),
@@ -151,6 +189,10 @@ class _MyAppState extends State<MyApp> {
               ElevatedButton(
                 onPressed: toggleCrowns,
                 child: Text(isCrownVisible ? 'Remove Crown' : 'Add Crown'),
+              ),
+              ElevatedButton(
+                onPressed: togglePimples,
+                child: Text(isPimpleVisible ? 'Remove Pimple' : 'Add Pimple'),
               ),
             ],
           ),
