@@ -12,7 +12,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int imageIndex = 0;
   int imageIndex2 = 0;
+  int imageIndex3 = 0;
   bool areGlassesVisible = false;
+  bool isCrownVisible = false;
   List<String> avatars = [
     'lib/images/people/1.png',
     'lib/images/people/2.png',
@@ -36,6 +38,13 @@ class _MyAppState extends State<MyApp> {
     'lib/images/glasses/6.png',
   ];
 
+  List<String> crowns = [
+    'lib/images/crowns/1.png',
+    'lib/images/crowns/2.png',
+    'lib/images/crowns/3.png',
+    'lib/images/crowns/4.png',
+  ];
+
   late List<List<String>> allImages;
   int currentListIndex = 0;
 
@@ -55,9 +64,21 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  void changeCrowns() {
+    setState(() {
+      imageIndex3 = (imageIndex3 + 1) % crowns.length;
+    });
+  }
+
   void toggleGlasses() {
     setState(() {
       areGlassesVisible = !areGlassesVisible;
+    });
+  }
+
+  void toggleCrowns() {
+    setState(() {
+      isCrownVisible = !isCrownVisible;
     });
   }
 
@@ -95,6 +116,18 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
+                  AnimatedOpacity(
+                    opacity: isCrownVisible ? 1.0 : 0.0,
+                    duration: Duration(milliseconds: 500),
+                    child: Visibility(
+                      visible: isCrownVisible,
+                      child: Transform.translate(
+                        offset: Offset(0.0, -100.0),
+                        child: Image.asset(crowns[imageIndex3],
+                            width: 100, height: 100),
+                      ),
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 20),
@@ -110,6 +143,10 @@ class _MyAppState extends State<MyApp> {
                 onPressed: toggleGlasses,
                 child:
                     Text(areGlassesVisible ? 'Remove Glasses' : 'Add Glasses'),
+              ),
+              ElevatedButton(
+                onPressed: toggleCrowns,
+                child: Text(isCrownVisible ? 'Remove Crown' : 'Add Crown'),
               ),
             ],
           ),
