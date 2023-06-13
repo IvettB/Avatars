@@ -87,9 +87,13 @@ class _MyAppState extends State<MyApp> {
                     opacity: areGlassesVisible ? 1.0 : 0.0,
                     duration: Duration(milliseconds: 500),
                     child: Visibility(
-                        visible: areGlassesVisible,
+                      visible: areGlassesVisible,
+                      child: Transform.translate(
+                        offset: Offset(0.0, -5.0),
                         child: Image.asset(glasses[imageIndex2],
-                            width: 200, height: 200)),
+                            width: 100, height: 100),
+                      ),
+                    ),
                   ),
                 ],
               ),
