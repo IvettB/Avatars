@@ -14,9 +14,11 @@ class _MyAppState extends State<MyApp> {
   int imageIndex2 = 0;
   int imageIndex3 = 0;
   int imageIndex4 = 0;
+  int imageIndex5 = 0;
   bool areGlassesVisible = false;
   bool isCrownVisible = false;
   bool isPimpleVisible = false;
+  bool isEarringVisible = false;
   List<String> avatars = [
     'lib/images/people/1.png',
     'lib/images/people/2.png',
@@ -55,6 +57,10 @@ class _MyAppState extends State<MyApp> {
     'lib/images/pimples/5.png',
   ];
 
+  List<String> earrings = [
+    'lib/images/earrings/1.png',
+  ];
+
   late List<List<String>> allImages;
   int currentListIndex = 0;
 
@@ -86,6 +92,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  void changeEarrings() {
+    setState(() {
+      imageIndex5 = (imageIndex5 + 1) % earrings.length;
+    });
+  }
+
   void toggleGlasses() {
     setState(() {
       areGlassesVisible = !areGlassesVisible;
@@ -101,6 +113,12 @@ class _MyAppState extends State<MyApp> {
   void togglePimples() {
     setState(() {
       isPimpleVisible = !isPimpleVisible;
+    });
+  }
+
+  void toggleEarrings() {
+    setState(() {
+      isEarringVisible = !isEarringVisible;
     });
   }
 
@@ -162,6 +180,30 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
+                  AnimatedOpacity(
+                    opacity: isEarringVisible ? 1.0 : 0.0,
+                    duration: Duration(milliseconds: 500),
+                    child: Visibility(
+                      visible: isEarringVisible,
+                      child: Transform.translate(
+                        offset: Offset(-65.0, 15.0),
+                        child: Image.asset(earrings[imageIndex5],
+                            width: 20, height: 25),
+                      ),
+                    ),
+                  ),
+                  AnimatedOpacity(
+                    opacity: isEarringVisible ? 1.0 : 0.0,
+                    duration: Duration(milliseconds: 500),
+                    child: Visibility(
+                      visible: isEarringVisible,
+                      child: Transform.translate(
+                        offset: Offset(55.0, 15.0),
+                        child: Image.asset(earrings[imageIndex5],
+                            width: 20, height: 25),
+                      ),
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 20),
@@ -182,6 +224,10 @@ class _MyAppState extends State<MyApp> {
                 child: Text('Change Pimple'),
               ),
               ElevatedButton(
+                onPressed: changeEarrings,
+                child: Text('Change Earring'),
+              ),
+              ElevatedButton(
                 onPressed: toggleGlasses,
                 child:
                     Text(areGlassesVisible ? 'Remove Glasses' : 'Add Glasses'),
@@ -193,6 +239,11 @@ class _MyAppState extends State<MyApp> {
               ElevatedButton(
                 onPressed: togglePimples,
                 child: Text(isPimpleVisible ? 'Remove Pimple' : 'Add Pimple'),
+              ),
+              ElevatedButton(
+                onPressed: toggleEarrings,
+                child:
+                    Text(isEarringVisible ? 'Remove Earring' : 'Add Earring'),
               ),
             ],
           ),
