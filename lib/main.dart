@@ -162,7 +162,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isCrownVisible,
                       child: Transform.translate(
-                        offset: Offset(-5.0, -100.0),
+                        offset: Offset(0.0, -100.0),
                         child: Image.asset(crowns[imageIndex3],
                             width: 100, height: 100),
                       ),
