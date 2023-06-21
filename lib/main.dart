@@ -15,10 +15,12 @@ class _MyAppState extends State<MyApp> {
   int imageIndex3 = 0;
   int imageIndex4 = 0;
   int imageIndex5 = 0;
+  int imageIndex6 = 0;
   bool areGlassesVisible = false;
   bool isCrownVisible = false;
   bool isPimpleVisible = false;
   bool isEarringVisible = false;
+  bool isEyePatchVisible = false;
   List<String> avatars = [
     'lib/images/people/1.png',
     'lib/images/people/2.png',
@@ -47,6 +49,7 @@ class _MyAppState extends State<MyApp> {
     'lib/images/crowns/2.png',
     'lib/images/crowns/3.png',
     'lib/images/crowns/4.png',
+    'lib/images/crowns/5.png',
   ];
 
   List<String> pimples = [
@@ -59,6 +62,10 @@ class _MyAppState extends State<MyApp> {
 
   List<String> earrings = [
     'lib/images/earrings/1.png',
+  ];
+
+  List<String> eyepatches = [
+    'lib/images/eye-patches/1.png',
   ];
 
   late List<List<String>> allImages;
@@ -98,6 +105,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  void changeEyePatches() {
+    setState(() {
+      imageIndex6 = (imageIndex6 + 1) % eyepatches.length;
+    });
+  }
+
   void toggleGlasses() {
     setState(() {
       areGlassesVisible = !areGlassesVisible;
@@ -122,6 +135,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  void toggleEyePatches() {
+    setState(() {
+      isEyePatchVisible = !isEyePatchVisible;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -133,7 +152,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Container(
           alignment: Alignment.topCenter,
-          padding: const EdgeInsets.only(top: 100),
+          padding: const EdgeInsets.only(top: 75),
           child: Column(
             children: [
               Stack(
@@ -204,6 +223,18 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
+                  AnimatedOpacity(
+                    opacity: isEyePatchVisible ? 1.0 : 0.0,
+                    duration: Duration(milliseconds: 500),
+                    child: Visibility(
+                      visible: isEyePatchVisible,
+                      child: Transform.translate(
+                        offset: Offset(-30.0, -10.0),
+                        child: Image.asset(eyepatches[imageIndex6],
+                            width: 75, height: 75),
+                      ),
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 20),
@@ -228,6 +259,10 @@ class _MyAppState extends State<MyApp> {
                 child: Text('Change Earring'),
               ),
               ElevatedButton(
+                onPressed: changeEyePatches,
+                child: Text('Change Eye Patch'),
+              ),
+              ElevatedButton(
                 onPressed: toggleGlasses,
                 child:
                     Text(areGlassesVisible ? 'Remove Glasses' : 'Add Glasses'),
@@ -244,6 +279,11 @@ class _MyAppState extends State<MyApp> {
                 onPressed: toggleEarrings,
                 child:
                     Text(isEarringVisible ? 'Remove Earring' : 'Add Earring'),
+              ),
+              ElevatedButton(
+                onPressed: toggleEyePatches,
+                child: Text(
+                    isEyePatchVisible ? 'Remove Eye Patch' : 'Add Eye Patch'),
               ),
             ],
           ),
