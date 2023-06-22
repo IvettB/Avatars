@@ -68,6 +68,7 @@ flutter:
    - lib/images/people/
    - lib/images/earrings/
    - lib/images/eye-patches/
+   - lib/images/neckbraces/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

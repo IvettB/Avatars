@@ -16,11 +16,13 @@ class _MyAppState extends State<MyApp> {
   int imageIndex4 = 0;
   int imageIndex5 = 0;
   int imageIndex6 = 0;
+  int imageIndex7 = 0;
   bool areGlassesVisible = false;
   bool isCrownVisible = false;
   bool isPimpleVisible = false;
   bool isEarringVisible = false;
   bool isEyePatchVisible = false;
+  bool isNeckBraceVisible = false;
   List<String> avatars = [
     'lib/images/people/1.png',
     'lib/images/people/2.png',
@@ -68,6 +70,10 @@ class _MyAppState extends State<MyApp> {
     'lib/images/eye-patches/1.png',
   ];
 
+  List<String> neckbraces = [
+    'lib/images/neckbraces/1.png',
+  ];
+
   late List<List<String>> allImages;
   int currentListIndex = 0;
 
@@ -111,6 +117,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  void changeNeckBrace() {
+    setState(() {
+      imageIndex7 = (imageIndex7 + 1) % neckbraces.length;
+    });
+  }
+
   void toggleGlasses() {
     setState(() {
       areGlassesVisible = !areGlassesVisible;
@@ -138,6 +150,12 @@ class _MyAppState extends State<MyApp> {
   void toggleEyePatches() {
     setState(() {
       isEyePatchVisible = !isEyePatchVisible;
+    });
+  }
+
+  void toggleNeckBrace() {
+    setState(() {
+      isNeckBraceVisible = !isNeckBraceVisible;
     });
   }
 
@@ -235,6 +253,18 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
+                  AnimatedOpacity(
+                    opacity: isNeckBraceVisible ? 1.0 : 0.0,
+                    duration: Duration(milliseconds: 500),
+                    child: Visibility(
+                      visible: isNeckBraceVisible,
+                      child: Transform.translate(
+                        offset: Offset(0.0, 50.0),
+                        child: Image.asset(neckbraces[imageIndex7],
+                            width: 250, height: 250),
+                      ),
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 20),
@@ -276,6 +306,11 @@ class _MyAppState extends State<MyApp> {
                 onPressed: toggleEyePatches,
                 child: Text(
                     isEyePatchVisible ? 'Remove Eye Patch' : 'Add Eye Patch'),
+              ),
+              ElevatedButton(
+                onPressed: toggleNeckBrace,
+                child: Text(
+                    isNeckBraceVisible ? 'Remove Neck Brace' : 'Add Neck Brace'),
               ),
             ],
           ),
