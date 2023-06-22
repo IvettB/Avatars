@@ -152,7 +152,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Container(
           alignment: Alignment.topCenter,
-          padding: const EdgeInsets.only(top: 75),
+          padding: const EdgeInsets.only(top: 100),
           child: Column(
             children: [
               Stack(
