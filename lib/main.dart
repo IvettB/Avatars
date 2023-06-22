@@ -255,14 +255,6 @@ class _MyAppState extends State<MyApp> {
                 child: Text('Change Pimple'),
               ),
               ElevatedButton(
-                onPressed: changeEarrings,
-                child: Text('Change Earring'),
-              ),
-              ElevatedButton(
-                onPressed: changeEyePatches,
-                child: Text('Change Eye Patch'),
-              ),
-              ElevatedButton(
                 onPressed: toggleGlasses,
                 child:
                     Text(areGlassesVisible ? 'Remove Glasses' : 'Add Glasses'),
