@@ -18,6 +18,7 @@ class _MyAppState extends State<MyApp> {
   int imageIndex6 = 0;
   int imageIndex7 = 0;
   int imageIndex8 = 0;
+  int imageIndex9 = 0;
   bool areGlassesVisible = false;
   bool isCrownVisible = false;
   bool isPimpleVisible = false;
@@ -25,6 +26,7 @@ class _MyAppState extends State<MyApp> {
   bool isEyePatchVisible = false;
   bool isNeckBraceVisible = false;
   bool isBlackEyeVisible = false;
+  bool isTieVisible = false;
   List<String> avatars = [
     'lib/images/people/1.png',
     'lib/images/people/2.png',
@@ -72,12 +74,17 @@ class _MyAppState extends State<MyApp> {
     'lib/images/eye-patches/1.png',
   ];
 
-  List<String> neckbraces = [
-    'lib/images/neckbraces/1.png',
+  List<String> neck = [
+    'lib/images/neck/1.png',
+    'lib/images/neck/2.png',
   ];
 
   List<String> blackeyes = [
     'lib/images/blackeyes/1.png',
+  ];
+
+  List<String> ties = [
+    'lib/images/ties/1.png',
   ];
 
   late List<List<String>> allImages;
@@ -125,13 +132,19 @@ class _MyAppState extends State<MyApp> {
 
   void changeNeckBrace() {
     setState(() {
-      imageIndex7 = (imageIndex7 + 1) % neckbraces.length;
+      imageIndex7 = (imageIndex7 + 1) % neck.length;
     });
   }
 
   void changeBlackEye() {
     setState(() {
       imageIndex8 = (imageIndex8 + 1) % blackeyes.length;
+    });
+  }
+
+  void changeTie() {
+    setState(() {
+      imageIndex9 = (imageIndex9 + 1) % ties.length;
     });
   }
 
@@ -174,6 +187,12 @@ class _MyAppState extends State<MyApp> {
   void toggleBlackEye() {
     setState(() {
       isBlackEyeVisible = !isBlackEyeVisible;
+    });
+  }
+
+  void toggleTie() {
+    setState(() {
+      isTieVisible = !isTieVisible;
     });
   }
 
@@ -266,7 +285,7 @@ class _MyAppState extends State<MyApp> {
                       visible: isNeckBraceVisible,
                       child: Transform.translate(
                         offset: Offset(0.0, 50.0),
-                        child: Image.asset(neckbraces[imageIndex7],
+                        child: Image.asset(neck[imageIndex7],
                             width: 250, height: 250),
                       ),
                     ),
@@ -295,6 +314,18 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
+                  AnimatedOpacity(
+                    opacity: isTieVisible ? 1.0 : 0.0,
+                    duration: Duration(milliseconds: 500),
+                    child: Visibility(
+                      visible: isTieVisible,
+                      child: Transform.translate(
+                        offset: Offset(-5.0, 110.0),
+                        child: Image.asset(ties[imageIndex9],
+                            width: 100, height: 100),
+                      ),
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 20),
@@ -303,18 +334,24 @@ class _MyAppState extends State<MyApp> {
                 child: Text('Change Image'),
               ),
               ElevatedButton(
+                onPressed: changeTie,
+                child: Text('Change Tie'),
+              ),
+              /*ElevatedButton(
                 onPressed: changeGlasses,
                 child: Text('Change Glasses'),
-              ),
-              ElevatedButton(
+              ),*/
+              /*ElevatedButton(
+                  onPressed: changeNeckBrace, child: Text('Change Neck Brace')),*/
+              /*ElevatedButton(
                 onPressed: changeCrowns,
                 child: Text('Change Crown'),
-              ),
+              ),*/
               /*ElevatedButton(
                 onPressed: changePimples,
                 child: Text('Change Pimple'),
               ),*/
-              ElevatedButton(
+              /*ElevatedButton(
                 onPressed: toggleGlasses,
                 child:
                     Text(areGlassesVisible ? 'Remove Glasses' : 'Add Glasses'),
@@ -323,7 +360,7 @@ class _MyAppState extends State<MyApp> {
                 onPressed: toggleBlackEye,
                 child: Text(
                     isBlackEyeVisible ? 'Remove Black Eye' : 'Add Black Eye'),
-              ),
+              ),*/
               ElevatedButton(
                 onPressed: toggleCrowns,
                 child: Text(isCrownVisible ? 'Remove Crown' : 'Add Crown'),
@@ -347,6 +384,10 @@ class _MyAppState extends State<MyApp> {
                 child: Text(isNeckBraceVisible
                     ? 'Remove Neck Brace'
                     : 'Add Neck Brace'),
+              ),
+              ElevatedButton(
+                onPressed: toggleTie,
+                child: Text(isTieVisible ? 'Remove Tie' : 'Add Tie'),
               ),
             ],
           ),
