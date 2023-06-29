@@ -333,29 +333,29 @@ class _MyAppState extends State<MyApp> {
                 onPressed: changeImage,
                 child: Text('Change Image'),
               ),
-              ElevatedButton(
+              /*ElevatedButton(
                 onPressed: changeTie,
                 child: Text('Change Tie'),
               ),
               ElevatedButton(
                 onPressed: changeNeckBrace,
                 child: Text('Change Neck Brace'),
-              ),
+              ),*/
               /*ElevatedButton(
                 onPressed: changeGlasses,
                 child: Text('Change Glasses'),
               ),*/
               /*ElevatedButton(
                   onPressed: changeNeckBrace, child: Text('Change Neck Brace')),*/
-              ElevatedButton(
+              /*ElevatedButton(
                 onPressed: changeCrowns,
                 child: Text('Change Crown'),
-              ),
+              ),*/
               /*ElevatedButton(
                 onPressed: changePimples,
                 child: Text('Change Pimple'),
               ),*/
-              /*ElevatedButton(
+              ElevatedButton(
                 onPressed: toggleGlasses,
                 child:
                     Text(areGlassesVisible ? 'Remove Glasses' : 'Add Glasses'),
@@ -364,7 +364,7 @@ class _MyAppState extends State<MyApp> {
                 onPressed: toggleBlackEye,
                 child: Text(
                     isBlackEyeVisible ? 'Remove Black Eye' : 'Add Black Eye'),
-              ),*/
+              ),
               ElevatedButton(
                 onPressed: toggleCrowns,
                 child: Text(isCrownVisible ? 'Remove Crown' : 'Add Crown'),
@@ -378,11 +378,11 @@ class _MyAppState extends State<MyApp> {
                 child:
                     Text(isEarringVisible ? 'Remove Earring' : 'Add Earring'),
               ),
-              ElevatedButton(
+              /*ElevatedButton(
                 onPressed: toggleEyePatches,
                 child: Text(
                     isEyePatchVisible ? 'Remove Eye Patch' : 'Add Eye Patch'),
-              ),
+              ),*/
               ElevatedButton(
                 onPressed: toggleNeckBrace,
                 child: Text(isNeckBraceVisible
