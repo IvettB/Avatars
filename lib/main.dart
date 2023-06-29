@@ -284,9 +284,9 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isNeckBraceVisible,
                       child: Transform.translate(
-                        offset: Offset(0.0, 50.0),
+                        offset: Offset(-5.0, 80.0),
                         child: Image.asset(neck[imageIndex7],
-                            width: 250, height: 250),
+                            width: 150, height: 150),
                       ),
                     ),
                   ),
@@ -337,16 +337,20 @@ class _MyAppState extends State<MyApp> {
                 onPressed: changeTie,
                 child: Text('Change Tie'),
               ),
+              ElevatedButton(
+                onPressed: changeNeckBrace,
+                child: Text('Change Neck Brace'),
+              ),
               /*ElevatedButton(
                 onPressed: changeGlasses,
                 child: Text('Change Glasses'),
               ),*/
               /*ElevatedButton(
                   onPressed: changeNeckBrace, child: Text('Change Neck Brace')),*/
-              /*ElevatedButton(
+              ElevatedButton(
                 onPressed: changeCrowns,
                 child: Text('Change Crown'),
-              ),*/
+              ),
               /*ElevatedButton(
                 onPressed: changePimples,
                 child: Text('Change Pimple'),
