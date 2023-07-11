@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'values.dart';
 
 void main() {
+  Maps();
   runApp(MyApp());
 }
 
@@ -19,6 +21,7 @@ class _MyAppState extends State<MyApp> {
   int imageIndex7 = 0;
   int imageIndex8 = 0;
   int imageIndex9 = 0;
+
   bool areGlassesVisible = false;
   bool isCrownVisible = false;
   bool isPimpleVisible = false;
@@ -39,6 +42,10 @@ class _MyAppState extends State<MyApp> {
     'lib/images/people/9.png',
     'lib/images/people/10.png',
     'lib/images/people/11.png',
+    'lib/images/people/12.png',
+    'lib/images/people/13.png',
+    'lib/images/people/14.png',
+    'lib/images/people/15.png',
   ];
 
   List<String> glasses = [
@@ -196,6 +203,7 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  Map currentMap = images['2.png'];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -224,7 +232,8 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: areGlassesVisible,
                       child: Transform.translate(
-                        offset: Offset(0.0, -5.0),
+                        offset: Offset(currentMap['glasses-offset-1'],
+                            currentMap['glasses-offset-2']),
                         child: Image.asset(glasses[imageIndex2],
                             width: 100, height: 100),
                       ),
@@ -248,7 +257,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isPimpleVisible,
                       child: Transform.translate(
-                        offset: Offset(-40.0, 35.0),
+                        offset: Offset(-10.0, 70.0),
                         child: Image.asset(pimples[imageIndex4],
                             width: 20, height: 25),
                       ),
@@ -260,7 +269,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isEarringVisible,
                       child: Transform.translate(
-                        offset: Offset(-65.0, 15.0),
+                        offset: Offset(-60.0, 15.0),
                         child: Image.asset(earrings[imageIndex5],
                             width: 20, height: 25),
                       ),
@@ -272,7 +281,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isEarringVisible,
                       child: Transform.translate(
-                        offset: Offset(55.0, 15.0),
+                        offset: Offset(50.0, 0.0),
                         child: Image.asset(earrings[imageIndex5],
                             width: 20, height: 25),
                       ),
@@ -284,7 +293,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isNeckBraceVisible,
                       child: Transform.translate(
-                        offset: Offset(-5.0, 80.0),
+                        offset: Offset(0.0, 100.0),
                         child: Image.asset(neck[imageIndex7],
                             width: 150, height: 150),
                       ),
@@ -296,7 +305,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isBlackEyeVisible,
                       child: Transform.translate(
-                        offset: Offset(-13.0, -2.0),
+                        offset: Offset(-8.0, -8.0),
                         child: Image.asset(blackeyes[imageIndex8],
                             width: 100, height: 100),
                       ),
@@ -308,7 +317,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isEyePatchVisible,
                       child: Transform.translate(
-                        offset: Offset(-30.0, -10.0),
+                        offset: Offset(-25.0, -20.0),
                         child: Image.asset(eyepatches[imageIndex6],
                             width: 75, height: 75),
                       ),
@@ -320,7 +329,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isTieVisible,
                       child: Transform.translate(
-                        offset: Offset(-5.0, 110.0),
+                        offset: Offset(0.0, 120.0),
                         child: Image.asset(ties[imageIndex9],
                             width: 100, height: 100),
                       ),
@@ -378,11 +387,11 @@ class _MyAppState extends State<MyApp> {
                 child:
                     Text(isEarringVisible ? 'Remove Earring' : 'Add Earring'),
               ),
-              /*ElevatedButton(
+              ElevatedButton(
                 onPressed: toggleEyePatches,
                 child: Text(
                     isEyePatchVisible ? 'Remove Eye Patch' : 'Add Eye Patch'),
-              ),*/
+              ),
               ElevatedButton(
                 onPressed: toggleNeckBrace,
                 child: Text(isNeckBraceVisible
