@@ -83,7 +83,6 @@ class _MyAppState extends State<MyApp> {
 
   List<String> neck = [
     'lib/images/neck/1.png',
-    'lib/images/neck/2.png',
   ];
 
   List<String> blackeyes = [

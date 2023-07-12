@@ -5,6 +5,7 @@ Map<String, double> valuesGreen = {};
 Map<String, double> valuesBlue = {};
 Map<String, dynamic> images = {};
 void Maps() {
+  //probably want to chagne the names of these lists. like maybe values1 for 1.png and values 2 for 2.png
   valuesGreen['glasses-offset-1'] = 0.0;
   valuesGreen['glasses-offset-2'] = -5.0;
   valuesGreen['glasses-width'] = 100;
@@ -60,13 +61,13 @@ void Maps() {
   valuesBlue['crown-width'] = 100;
   valuesBlue['crown-height'] = 100;
 
-  valuesBlue['earring-left-offset1'] = -60.0;
-  valuesBlue['earring-left-offset2'] = 15.0;
+  valuesBlue['earring-left-offset-1'] = -60.0;
+  valuesBlue['earring-left-offset-2'] = 15.0;
   valuesBlue['earring-left-width'] = 20;
   valuesBlue['earring-left-height'] = 25;
 
-  valuesBlue['earring-right-offset1'] = 50.0;
-  valuesBlue['earring-right-offset2'] = 0.0;
+  valuesBlue['earring-right-offset-1'] = 50.0;
+  valuesBlue['earring-right-offset-2'] = 0.0;
   valuesBlue['earring-right-width'] = 20;
   valuesBlue['earring-right-height'] = 25;
 
