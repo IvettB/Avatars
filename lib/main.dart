@@ -203,9 +203,10 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  Map currentMap = images['2.png'];
   @override
   Widget build(BuildContext context) {
+    String avatar = avatars[imageIndex];
+    Map currentMap = images[avatar];
     return MaterialApp(
       title: 'Avatar Demo',
       debugShowCheckedModeBanner: false,
@@ -222,7 +223,8 @@ class _MyAppState extends State<MyApp> {
                 alignment: Alignment.center,
                 children: [
                   Image.asset(
-                    avatars[imageIndex],
+                    avatar,
+                    //avatars[imageIndex],
                     width: 200,
                     height: 200,
                   ),
@@ -235,7 +237,8 @@ class _MyAppState extends State<MyApp> {
                         offset: Offset(currentMap['glasses-offset-1'],
                             currentMap['glasses-offset-2']),
                         child: Image.asset(glasses[imageIndex2],
-                            width: 100, height: 100),
+                            width: currentMap['glasses-width'],
+                            height: currentMap['glasses-height']),
                       ),
                     ),
                   ),
