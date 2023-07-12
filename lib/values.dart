@@ -15,13 +15,13 @@ void Maps() {
   valuesGreen['crown-width'] = 20;
   valuesGreen['crown-height'] = 25;
 
-  valuesGreen['earring-left-offset1'] = -65.0;
-  valuesGreen['earring-left-offset2'] = 15.0;
+  valuesGreen['earring-left-offset-1'] = -65.0;
+  valuesGreen['earring-left-offset-2'] = 15.0;
   valuesGreen['earring-left-width'] = 20;
   valuesGreen['earring-left-height'] = 25;
 
-  valuesGreen['earring-right-offset1'] = 55.0;
-  valuesGreen['earring-right-offset2'] = 15.0;
+  valuesGreen['earring-right-offset-1'] = 55.0;
+  valuesGreen['earring-right-offset-2'] = 15.0;
   valuesGreen['earring-right-width'] = 20;
   valuesGreen['earring-right-height'] = 25;
 
@@ -44,6 +44,11 @@ void Maps() {
   valuesGreen['tie-offset-2'] = 110.0;
   valuesGreen['tie-width'] = 100;
   valuesGreen['tie-height'] = 100;
+
+  valuesGreen['pimple-offset-1'] = -30.0;
+  valuesGreen['pimple-offset-2'] = 40.0;
+  valuesGreen['pimple-width'] = 15;
+  valuesGreen['pimple-height'] = 20;
 
   valuesBlue['glasses-offset-1'] = 0.0;
   valuesBlue['glasses-offset-2'] = -15.0;
@@ -84,6 +89,11 @@ void Maps() {
   valuesBlue['tie-offset-2'] = 120.0;
   valuesBlue['tie-width'] = 100;
   valuesBlue['tie-height'] = 100;
+
+  valuesBlue['pimple-offset-1'] = -10.0;
+  valuesBlue['pimple-offset-2'] = 70.0;
+  valuesBlue['pimple-width'] = 20;
+  valuesBlue['pimple-height'] = 25;
 
   images['lib/images/people/1.png'] = valuesGreen; //valuesGreen;
   images['lib/images/people/2.png'] = valuesGreen;
