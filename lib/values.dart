@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'main.dart';
 
+//names are for the value on the .png. ex: values2 are for the 2.png avatar.
 Map<String, double> values2 = {};
 Map<String, double> values4 = {};
 Map<String, dynamic> images = {};
