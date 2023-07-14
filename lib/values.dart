@@ -100,4 +100,14 @@ void Maps() {
   images['lib/images/people/2.png'] = values2;
   images['lib/images/people/3.png'] = values4;
   images['lib/images/people/4.png'] = values4;
+  images['lib/images/people/5.png'] = values2;
+  images['lib/images/people/6.png'] = values2;
+  images['lib/images/people/7.png'] = values4;
+  images['lib/images/people/8.png'] = values4;
+  images['lib/images/people/9.png'] = values2;
+  images['lib/images/people/10.png'] = values2;
+  images['lib/images/people/11.png'] = values4;
+  images['lib/images/people/12.png'] = values4;
+  images['lib/images/people/13.png'] = values2;
+  images['lib/images/people/14.png'] = values2;
 }
