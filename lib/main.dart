@@ -75,6 +75,16 @@ class _MyAppState extends State<MyApp> {
 
   List<String> earrings = [
     'lib/images/earrings/1.png',
+    'lib/images/earrings/2.png',
+    'lib/images/earrings/3.png',
+    'lib/images/earrings/4.png',
+    'lib/images/earrings/5.png',
+    'lib/images/earrings/6.png',
+    'lib/images/earrings/7.png',
+    'lib/images/earrings/8.png',
+    'lib/images/earrings/9.png',
+    'lib/images/earrings/10.png',
+    'lib/images/earrings/11.png',
   ];
 
   List<String> eyepatches = [
@@ -87,10 +97,22 @@ class _MyAppState extends State<MyApp> {
 
   List<String> blackeyes = [
     'lib/images/blackeyes/1.png',
+    'lib/images/blackeyes/2.png',
+    'lib/images/blackeyes/3.png',
+    'lib/images/blackeyes/4.png',
+    'lib/images/blackeyes/5.png',
   ];
 
   List<String> ties = [
     'lib/images/ties/1.png',
+    'lib/images/ties/2.png',
+    'lib/images/ties/3.png',
+    'lib/images/ties/4.png',
+    'lib/images/ties/5.png',
+    'lib/images/ties/6.png',
+    'lib/images/ties/7.png',
+    'lib/images/ties/8.png',
+    'lib/images/ties/9.png',
   ];
 
   late List<List<String>> allImages;
