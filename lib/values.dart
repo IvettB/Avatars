@@ -6,6 +6,7 @@ Map<String, double> values1 = {};
 Map<String, double> values2 = {};
 Map<String, double> values3 = {};
 Map<String, double> values4 = {};
+Map<String, double> values6 = {};
 Map<String, double> values12 = {};
 Map<String, double> values13 = {};
 Map<String, double> values14 = {};
@@ -190,6 +191,51 @@ void Maps() {
   values4['pimple-offset-2'] = 70.0;
   values4['pimple-width'] = 20;
   values4['pimple-height'] = 25;
+
+  values6['glasses-offset-1'] = 0.0;
+  values6['glasses-offset-2'] = -16.0;
+  values6['glasses-width'] = 60;
+  values6['glasses-height'] = 60;
+
+  values6['crown-offset-1'] = -5.0;
+  values6['crown-offset-2'] = -85.0;
+  values6['crown-width'] = 80;
+  values6['crown-height'] = 80;
+
+  values6['earring-left-offset-1'] = -35.0;
+  values6['earring-left-offset-2'] = 5.0;
+  values6['earring-left-width'] = 15;
+  values6['earring-left-height'] = 15;
+
+  values6['earring-right-offset-1'] = 34.0;
+  values6['earring-right-offset-2'] = 0.0;
+  values6['earring-right-width'] = 0;
+  values6['earring-right-height'] = 0;
+
+  values6['neckbrace-offset-1'] = 0.0;
+  values6['neckbrace-offset-2'] = 50.0;
+  values6['neckbrace-width'] = 70;
+  values6['neckbrace-height'] = 70;
+
+  values6['black-eye-offset-1'] = -8.0;
+  values6['black-eye-offset-2'] = -10.0;
+  values6['black-eye-width'] = 50;
+  values6['black-eye-height'] = 50;
+
+  values6['eye-patch-offset-1'] = -17.0;
+  values6['eye-patch-offset-2'] = -18.0;
+  values6['eye-patch-width'] = 40;
+  values6['eye-patch-height'] = 40;
+
+  values6['tie-offset-1'] = -2.0;
+  values6['tie-offset-2'] = 90.0;
+  values6['tie-width'] = 100;
+  values6['tie-height'] = 100;
+
+  values6['pimple-offset-1'] = 15.0;
+  values6['pimple-offset-2'] = 0.0;
+  values6['pimple-width'] = 15;
+  values6['pimple-height'] = 15;
 
   values12['glasses-offset-1'] = -2.0;
   values12['glasses-offset-2'] = 7.0;
