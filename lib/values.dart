@@ -2,13 +2,60 @@ import 'package:flutter/material.dart';
 import 'main.dart';
 
 //names are for the value on the .png. ex: values2 are for the 2.png avatar.
+Map<String, double> values1 = {};
 Map<String, double> values2 = {};
+Map<String, double> values3 = {};
 Map<String, double> values4 = {};
 Map<String, double> values12 = {};
 Map<String, double> values13 = {};
 Map<String, double> values14 = {};
 Map<String, dynamic> images = {};
 void Maps() {
+  values1['glasses-offset-1'] = 0.0;
+  values1['glasses-offset-2'] = -20.0;
+  values1['glasses-width'] = 50;
+  values1['glasses-height'] = 50;
+
+  values1['crown-offset-1'] = -5.0;
+  values1['crown-offset-2'] = -75.0;
+  values1['crown-width'] = 50;
+  values1['crown-height'] = 50;
+
+  values1['earring-left-offset-1'] = -30.0;
+  values1['earring-left-offset-2'] = 5.0;
+  values1['earring-left-width'] = 15;
+  values1['earring-left-height'] = 15;
+
+  values1['earring-right-offset-1'] = 34.0;
+  values1['earring-right-offset-2'] = 5.0;
+  values1['earring-right-width'] = 15;
+  values1['earring-right-height'] = 15;
+
+  values1['neckbrace-offset-1'] = 3.0;
+  values1['neckbrace-offset-2'] = 50.0;
+  values1['neckbrace-width'] = 80;
+  values1['neckbrace-height'] = 80;
+
+  values1['black-eye-offset-1'] = -5.0;
+  values1['black-eye-offset-2'] = -18.0;
+  values1['black-eye-width'] = 50;
+  values1['black-eye-height'] = 50;
+
+  values1['eye-patch-offset-1'] = -15.0;
+  values1['eye-patch-offset-2'] = -25.0;
+  values1['eye-patch-width'] = 40;
+  values1['eye-patch-height'] = 40;
+
+  values1['tie-offset-1'] = 3.0;
+  values1['tie-offset-2'] = 90.0;
+  values1['tie-width'] = 100;
+  values1['tie-height'] = 100;
+
+  values1['pimple-offset-1'] = -3.0;
+  values1['pimple-offset-2'] = 30.0;
+  values1['pimple-width'] = 15;
+  values1['pimple-height'] = 15;
+
   values2['glasses-offset-1'] = 0.0;
   values2['glasses-offset-2'] = -5.0;
   values2['glasses-width'] = 100;
@@ -53,6 +100,51 @@ void Maps() {
   values2['pimple-offset-2'] = 40.0;
   values2['pimple-width'] = 15;
   values2['pimple-height'] = 20;
+
+  values3['glasses-offset-1'] = -3.0;
+  values3['glasses-offset-2'] = -20.0;
+  values3['glasses-width'] = 60;
+  values3['glasses-height'] = 60;
+
+  values3['crown-offset-1'] = -5.0;
+  values3['crown-offset-2'] = -85.0;
+  values3['crown-width'] = 60;
+  values3['crown-height'] = 60;
+
+  values3['earring-left-offset-1'] = -40.0;
+  values3['earring-left-offset-2'] = 0.0;
+  values3['earring-left-width'] = 20;
+  values3['earring-left-height'] = 20;
+
+  values3['earring-right-offset-1'] = 34.0;
+  values3['earring-right-offset-2'] = 0.0;
+  values3['earring-right-width'] = 20;
+  values3['earring-right-height'] = 20;
+
+  values3['neckbrace-offset-1'] = -5.0;
+  values3['neckbrace-offset-2'] = 45.0;
+  values3['neckbrace-width'] = 100;
+  values3['neckbrace-height'] = 100;
+
+  values3['black-eye-offset-1'] = -12.0;
+  values3['black-eye-offset-2'] = -18.0;
+  values3['black-eye-width'] = 50;
+  values3['black-eye-height'] = 50;
+
+  values3['eye-patch-offset-1'] = -20.0;
+  values3['eye-patch-offset-2'] = -25.0;
+  values3['eye-patch-width'] = 40;
+  values3['eye-patch-height'] = 40;
+
+  values3['tie-offset-1'] = -2.0;
+  values3['tie-offset-2'] = 90.0;
+  values3['tie-width'] = 100;
+  values3['tie-height'] = 100;
+
+  values3['pimple-offset-1'] = 15.0;
+  values3['pimple-offset-2'] = 0.0;
+  values3['pimple-width'] = 15;
+  values3['pimple-height'] = 15;
 
   values4['glasses-offset-1'] = 0.0;
   values4['glasses-offset-2'] = -15.0;
