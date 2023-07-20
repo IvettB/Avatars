@@ -418,12 +418,12 @@ void Maps() {
   values14['pimple-width'] = 15;
   values14['pimple-height'] = 15;
 
-  images['lib/images/people/1.png'] = values2; //valuesGreen;
+  images['lib/images/people/1.png'] = values1; //valuesGreen;
   images['lib/images/people/2.png'] = values2;
-  images['lib/images/people/3.png'] = values4;
+  images['lib/images/people/3.png'] = values3;
   images['lib/images/people/4.png'] = values4;
-  images['lib/images/people/5.png'] = values2;
-  images['lib/images/people/6.png'] = values2;
+  images['lib/images/people/5.png'] = values5;
+  images['lib/images/people/6.png'] = values6;
   images['lib/images/people/7.png'] = values4;
   images['lib/images/people/8.png'] = values4;
   images['lib/images/people/9.png'] = values2;
