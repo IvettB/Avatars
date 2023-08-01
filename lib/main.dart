@@ -254,9 +254,11 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: areGlassesVisible,
                       child: Transform.translate(
-                        offset: Offset(-7, 3),
+                        offset: Offset(currentMap['glasses-offset-1'],
+                            currentMap['glasses-offset-2']),
                         child: Image.asset(glasses[imageIndex2],
-                            width: 110, height: 110),
+                            width: currentMap['glasses-width'],
+                            height: currentMap['glasses-height']),
                       ),
                     ),
                   ),
@@ -266,9 +268,11 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isCrownVisible,
                       child: Transform.translate(
-                        offset: Offset(0, -90),
+                        offset: Offset(currentMap['crown-offset-1'],
+                            currentMap['crown-offset-2']),
                         child: Image.asset(crowns[imageIndex3],
-                            width: 80, height: 80),
+                            width: currentMap['crown-width'],
+                            height: currentMap['crown-height']),
                       ),
                     ),
                   ),
@@ -278,9 +282,11 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isPimpleVisible,
                       child: Transform.translate(
-                        offset: Offset(20, 30),
+                        offset: Offset(currentMap['pimple-offset-1'],
+                            currentMap['pimple-offset-2']),
                         child: Image.asset(pimples[imageIndex4],
-                            width: 20, height: 20),
+                            width: currentMap['pimple-width'],
+                            height: currentMap['pimple-height']),
                       ),
                     ),
                   ),
@@ -290,9 +296,11 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isEarringVisible,
                       child: Transform.translate(
-                        offset: Offset(-45, 35),
+                        offset: Offset(currentMap['earring-left-offset-1'],
+                            currentMap['earring-left-offset-2']),
                         child: Image.asset(earrings[imageIndex5],
-                            width: 25, height: 25),
+                            width: currentMap['earring-left-width'],
+                            height: currentMap['earring-left-height']),
                       ),
                     ),
                   ),
@@ -302,9 +310,11 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isEarringVisible,
                       child: Transform.translate(
-                        offset: Offset(40, 35),
+                        offset: Offset(currentMap['earring-right-offset-1'],
+                            currentMap['earring-right-offset-2']),
                         child: Image.asset(earrings[imageIndex5],
-                            width: 25, height: 25),
+                            width: currentMap['earring-right-width'],
+                            height: currentMap['earring-right-height']),
                       ),
                     ),
                   ),
@@ -314,9 +324,11 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isNeckBraceVisible,
                       child: Transform.translate(
-                        offset: Offset(-5, 85),
+                        offset: Offset(currentMap['neckbrace-offset-1'],
+                            currentMap['neckbrace-offset-2']),
                         child: Image.asset(neck[imageIndex7],
-                            width: 100, height: 100),
+                            width: currentMap['neckbrace-width'],
+                            height: currentMap['neckbrace-height']),
                       ),
                     ),
                   ),
@@ -326,9 +338,11 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isBlackEyeVisible,
                       child: Transform.translate(
-                        offset: Offset(-14, 10),
+                        offset: Offset(currentMap['black-eye-offset-1'],
+                            currentMap['black-eye-offset-2']),
                         child: Image.asset(blackeyes[imageIndex8],
-                            width: 100, height: 100),
+                            width: currentMap['black-eye-width'],
+                            height: currentMap['black-eye-height']),
                       ),
                     ),
                   ),
@@ -338,9 +352,11 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isEyePatchVisible,
                       child: Transform.translate(
-                        offset: Offset(-30, -5),
+                        offset: Offset(currentMap['eye-patch-offset-1'],
+                            currentMap['eye-patch-offset-2']),
                         child: Image.asset(eyepatches[imageIndex6],
-                            width: 70, height: 70),
+                            width: currentMap['eye-patch-width'],
+                            height: currentMap['eye-patch-height']),
                       ),
                     ),
                   ),
@@ -350,9 +366,11 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isTieVisible,
                       child: Transform.translate(
-                        offset: Offset(-5, 125),
+                        offset: Offset(currentMap['tie-offset-1'],
+                            currentMap['tie-offset-2']),
                         child: Image.asset(ties[imageIndex9],
-                            width: 100, height: 100),
+                            width: currentMap['tie-width'],
+                            height: currentMap['tie-height']),
                       ),
                     ),
                   ),
