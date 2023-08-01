@@ -254,7 +254,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: areGlassesVisible,
                       child: Transform.translate(
-                        offset: Offset(0, 10),
+                        offset: Offset(-7, 3),
                         child: Image.asset(glasses[imageIndex2],
                             width: 110, height: 110),
                       ),
@@ -266,7 +266,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isCrownVisible,
                       child: Transform.translate(
-                        offset: Offset(0, -100),
+                        offset: Offset(0, -90),
                         child: Image.asset(crowns[imageIndex3],
                             width: 80, height: 80),
                       ),
@@ -278,9 +278,9 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isPimpleVisible,
                       child: Transform.translate(
-                        offset: Offset(40, 40),
+                        offset: Offset(20, 30),
                         child: Image.asset(pimples[imageIndex4],
-                            width: 15, height: 15),
+                            width: 20, height: 20),
                       ),
                     ),
                   ),
@@ -290,7 +290,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isEarringVisible,
                       child: Transform.translate(
-                        offset: Offset(-60, 30),
+                        offset: Offset(-45, 35),
                         child: Image.asset(earrings[imageIndex5],
                             width: 25, height: 25),
                       ),
@@ -302,7 +302,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isEarringVisible,
                       child: Transform.translate(
-                        offset: Offset(60, 30),
+                        offset: Offset(40, 35),
                         child: Image.asset(earrings[imageIndex5],
                             width: 25, height: 25),
                       ),
@@ -314,9 +314,9 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isNeckBraceVisible,
                       child: Transform.translate(
-                        offset: Offset(0, 80),
+                        offset: Offset(-5, 85),
                         child: Image.asset(neck[imageIndex7],
-                            width: 70, height: 70),
+                            width: 100, height: 100),
                       ),
                     ),
                   ),
@@ -326,7 +326,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isBlackEyeVisible,
                       child: Transform.translate(
-                        offset: Offset(-10, 22),
+                        offset: Offset(-14, 10),
                         child: Image.asset(blackeyes[imageIndex8],
                             width: 100, height: 100),
                       ),
@@ -338,9 +338,9 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isEyePatchVisible,
                       child: Transform.translate(
-                        offset: Offset(-30, 2),
+                        offset: Offset(-30, -5),
                         child: Image.asset(eyepatches[imageIndex6],
-                            width: 90, height: 90),
+                            width: 70, height: 70),
                       ),
                     ),
                   ),
@@ -350,7 +350,7 @@ class _MyAppState extends State<MyApp> {
                     child: Visibility(
                       visible: isTieVisible,
                       child: Transform.translate(
-                        offset: Offset(-2, 110),
+                        offset: Offset(-5, 125),
                         child: Image.asset(ties[imageIndex9],
                             width: 100, height: 100),
                       ),

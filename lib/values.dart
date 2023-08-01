@@ -288,6 +288,231 @@ void Maps() {
   values6['pimple-width'] = 15;
   values6['pimple-height'] = 15;
 
+  values7['glasses-offset-1'] = 4.0;
+  values7['glasses-offset-2'] = -6.0;
+  values7['glasses-width'] = 90;
+  values7['glasses-height'] = 100;
+
+  values7['crown-offset-1'] = -1.0;
+  values7['crown-offset-2'] = -85.0;
+  values7['crown-width'] = 100;
+  values7['crown-height'] = 100;
+
+  values7['earring-left-offset-1'] = -60.0;
+  values7['earring-left-offset-2'] = 30.0;
+  values7['earring-left-width'] = 25;
+  values7['earring-left-height'] = 25;
+
+  values7['earring-right-offset-1'] = 60.0;
+  values7['earring-right-offset-2'] = 30.0;
+  values7['earring-right-width'] = 25;
+  values7['earring-right-height'] = 25;
+
+  values7['neckbrace-offset-1'] = 0.0;
+  values7['neckbrace-offset-2'] = 105.0;
+  values7['neckbrace-width'] = 200;
+  values7['neckbrace-height'] = 200;
+
+  values7['black-eye-offset-1'] = -3.0;
+  values7['black-eye-offset-2'] = 2.0;
+  values7['black-eye-width'] = 100;
+  values7['black-eye-height'] = 100;
+
+  values7['eye-patch-offset-1'] = -25.0;
+  values7['eye-patch-offset-2'] = -7.0;
+  values7['eye-patch-width'] = 90;
+  values7['eye-patch-height'] = 90;
+
+  values7['tie-offset-1'] = 7.0;
+  values7['tie-offset-2'] = 125.0;
+  values7['tie-width'] = 100;
+  values7['tie-height'] = 100;
+
+  values7['pimple-offset-1'] = -35.0;
+  values7['pimple-offset-2'] = 10.0;
+  values7['pimple-width'] = 15;
+  values7['pimple-height'] = 25;
+
+  values8['glasses-offset-1'] = -7.0;
+  values8['glasses-offset-2'] = 10.0;
+  values8['glasses-width'] = 90;
+  values8['glasses-height'] = 100;
+
+  values8['crown-offset-1'] = -10.0;
+  values8['crown-offset-2'] = -95.0;
+  values8['crown-width'] = 100;
+  values8['crown-height'] = 100;
+
+  values8['earring-left-offset-1'] = -35.0;
+  values8['earring-left-offset-2'] = 5.0;
+  values8['earring-left-width'] = 0;
+  values8['earring-left-height'] = 0;
+
+  values8['earring-right-offset-1'] = 34.0;
+  values8['earring-right-offset-2'] = 0.0;
+  values8['earring-right-width'] = 0;
+  values8['earring-right-height'] = 0;
+
+  values8['neckbrace-offset-1'] = -5.0;
+  values8['neckbrace-offset-2'] = 75.0;
+  values8['neckbrace-width'] = 110;
+  values8['neckbrace-height'] = 150;
+
+  values8['black-eye-offset-1'] = -20.0;
+  values8['black-eye-offset-2'] = 15.0;
+  values8['black-eye-width'] = 60;
+  values8['black-eye-height'] = 100;
+
+  values8['eye-patch-offset-1'] = -30.0;
+  values8['eye-patch-offset-2'] = 0.0;
+  values8['eye-patch-width'] = 90;
+  values8['eye-patch-height'] = 90;
+
+  values8['tie-offset-1'] = -10.0;
+  values8['tie-offset-2'] = 109.0;
+  values8['tie-width'] = 100;
+  values8['tie-height'] = 100;
+
+  values8['pimple-offset-1'] = -35.0;
+  values8['pimple-offset-2'] = 30.0;
+  values8['pimple-width'] = 10;
+  values8['pimple-height'] = 25;
+
+  values9['glasses-offset-1'] = -5.0;
+  values9['glasses-offset-2'] = 1.0;
+  values9['glasses-width'] = 110;
+  values9['glasses-height'] = 100;
+
+  values9['crown-offset-1'] = -10.0;
+  values9['crown-offset-2'] = -100.0;
+  values9['crown-width'] = 100;
+  values9['crown-height'] = 100;
+
+  values9['earring-left-offset-1'] = -60.0;
+  values9['earring-left-offset-2'] = 30.0;
+  values9['earring-left-width'] = 25;
+  values9['earring-left-height'] = 25;
+
+  values9['earring-right-offset-1'] = 60.0;
+  values9['earring-right-offset-2'] = 30.0;
+  values9['earring-right-width'] = 25;
+  values9['earring-right-height'] = 25;
+
+  values9['neckbrace-offset-1'] = 0.0;
+  values9['neckbrace-offset-2'] = 80.0;
+  values9['neckbrace-width'] = 0;
+  values9['neckbrace-height'] = 0;
+
+  values9['black-eye-offset-1'] = -10.0;
+  values9['black-eye-offset-2'] = 12.0;
+  values9['black-eye-width'] = 100;
+  values9['black-eye-height'] = 100;
+
+  values9['eye-patch-offset-1'] = -30.0;
+  values9['eye-patch-offset-2'] = 0.0;
+  values9['eye-patch-width'] = 90;
+  values9['eye-patch-height'] = 90;
+
+  values9['tie-offset-1'] = -5.0;
+  values9['tie-offset-2'] = 120.0;
+  values9['tie-width'] = 100;
+  values9['tie-height'] = 100;
+
+  values9['pimple-offset-1'] = -18.0;
+  values9['pimple-offset-2'] = 30.0;
+  values9['pimple-width'] = 10;
+  values9['pimple-height'] = 25;
+
+  values10['glasses-offset-1'] = -1.0;
+  values10['glasses-offset-2'] = -6.0;
+  values10['glasses-width'] = 100;
+  values10['glasses-height'] = 100;
+
+  values10['crown-offset-1'] = -10.0;
+  values10['crown-offset-2'] = -80.0;
+  values10['crown-width'] = 100;
+  values10['crown-height'] = 100;
+
+  values10['earring-left-offset-1'] = -50.0;
+  values10['earring-left-offset-2'] = 25.0;
+  values10['earring-left-width'] = 25;
+  values10['earring-left-height'] = 25;
+
+  values10['earring-right-offset-1'] = 45.0;
+  values10['earring-right-offset-2'] = 25.0;
+  values10['earring-right-width'] = 25;
+  values10['earring-right-height'] = 25;
+
+  values10['neckbrace-offset-1'] = -5.0;
+  values10['neckbrace-offset-2'] = 85.0;
+  values10['neckbrace-width'] = 150;
+  values10['neckbrace-height'] = 150;
+
+  values10['black-eye-offset-1'] = -6.0;
+  values10['black-eye-offset-2'] = -1.0;
+  values10['black-eye-width'] = 100;
+  values10['black-eye-height'] = 100;
+
+  values10['eye-patch-offset-1'] = -25.0;
+  values10['eye-patch-offset-2'] = -10.0;
+  values10['eye-patch-width'] = 70;
+  values10['eye-patch-height'] = 70;
+
+  values10['tie-offset-1'] = -5.0;
+  values10['tie-offset-2'] = 110.0;
+  values10['tie-width'] = 100;
+  values10['tie-height'] = 100;
+
+  values10['pimple-offset-1'] = -18.0;
+  values10['pimple-offset-2'] = 50.0;
+  values10['pimple-width'] = 10;
+  values10['pimple-height'] = 25;
+
+  values11['glasses-offset-1'] = -7.0;
+  values11['glasses-offset-2'] = 3.0;
+  values11['glasses-width'] = 110;
+  values11['glasses-height'] = 110;
+
+  values11['crown-offset-1'] = 0.0;
+  values11['crown-offset-2'] = -90.0;
+  values11['crown-width'] = 80;
+  values11['crown-height'] = 80;
+
+  values11['earring-left-offset-1'] = -45.0;
+  values11['earring-left-offset-2'] = 35.0;
+  values11['earring-left-width'] = 25;
+  values11['earring-left-height'] = 25;
+
+  values11['earring-right-offset-1'] = 40.0;
+  values11['earring-right-offset-2'] = 35.0;
+  values11['earring-right-width'] = 25;
+  values11['earring-right-height'] = 25;
+
+  values11['neckbrace-offset-1'] = -5.0;
+  values11['neckbrace-offset-2'] = 85.0;
+  values11['neckbrace-width'] = 100;
+  values11['neckbrace-height'] = 100;
+
+  values11['black-eye-offset-1'] = -14.0;
+  values11['black-eye-offset-2'] = 10.0;
+  values11['black-eye-width'] = 100;
+  values11['black-eye-height'] = 100;
+
+  values11['eye-patch-offset-1'] = -30.0;
+  values11['eye-patch-offset-2'] = -5.0;
+  values11['eye-patch-width'] = 70;
+  values11['eye-patch-height'] = 70;
+
+  values11['tie-offset-1'] = -5.0;
+  values11['tie-offset-2'] = 125.0;
+  values11['tie-width'] = 100;
+  values11['tie-height'] = 100;
+
+  values11['pimple-offset-1'] = 20.0;
+  values11['pimple-offset-2'] = 30.0;
+  values11['pimple-width'] = 20;
+  values11['pimple-height'] = 20;
+
   values12['glasses-offset-1'] = -2.0;
   values12['glasses-offset-2'] = 7.0;
   values12['glasses-width'] = 110;
@@ -429,11 +654,11 @@ void Maps() {
   images['lib/images/people/4.png'] = values4;
   images['lib/images/people/5.png'] = values5;
   images['lib/images/people/6.png'] = values6;
-  images['lib/images/people/7.png'] = values4;
-  images['lib/images/people/8.png'] = values4;
-  images['lib/images/people/9.png'] = values2;
-  images['lib/images/people/10.png'] = values2;
-  images['lib/images/people/11.png'] = values4;
+  images['lib/images/people/7.png'] = values7;
+  images['lib/images/people/8.png'] = values8;
+  images['lib/images/people/9.png'] = values9;
+  images['lib/images/people/10.png'] = values10;
+  images['lib/images/people/11.png'] = values11;
   images['lib/images/people/12.png'] = values12;
   images['lib/images/people/13.png'] = values13;
   images['lib/images/people/14.png'] = values14;
