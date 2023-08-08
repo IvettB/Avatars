@@ -389,10 +389,10 @@ class _MyAppState extends State<MyApp> {
                 onPressed: changeNeckBrace,
                 child: Text('Change Neck Brace'),
               ),*/
-              /*ElevatedButton(
+              ElevatedButton(
                 onPressed: changeGlasses,
                 child: Text('Change Glasses'),
-              ),*/
+              ),
               /*ElevatedButton(
                   onPressed: changeNeckBrace, child: Text('Change Neck Brace')),*/
               /*ElevatedButton(

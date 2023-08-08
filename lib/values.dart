@@ -54,9 +54,9 @@ void Maps() {
   values1['eye-patch-height'] = 40;
 
   values1['tie-offset-1'] = 3.0;
-  values1['tie-offset-2'] = 90.0;
-  values1['tie-width'] = 100;
-  values1['tie-height'] = 100;
+  values1['tie-offset-2'] = 55.0;
+  values1['tie-width'] = 50;
+  values1['tie-height'] = 50;
 
   values1['pimple-offset-1'] = -3.0;
   values1['pimple-offset-2'] = 30.0;
@@ -99,9 +99,9 @@ void Maps() {
   values2['eye-patch-height'] = 75;
 
   values2['tie-offset-1'] = -5.0;
-  values2['tie-offset-2'] = 110.0;
-  values2['tie-width'] = 100;
-  values2['tie-height'] = 100;
+  values2['tie-offset-2'] = 90.0;
+  values2['tie-width'] = 70;
+  values2['tie-height'] = 70;
 
   values2['pimple-offset-1'] = -30.0;
   values2['pimple-offset-2'] = 40.0;
@@ -144,9 +144,9 @@ void Maps() {
   values3['eye-patch-height'] = 40;
 
   values3['tie-offset-1'] = -2.0;
-  values3['tie-offset-2'] = 90.0;
-  values3['tie-width'] = 100;
-  values3['tie-height'] = 100;
+  values3['tie-offset-2'] = 50.0;
+  values3['tie-width'] = 70;
+  values3['tie-height'] = 70;
 
   values3['pimple-offset-1'] = 15.0;
   values3['pimple-offset-2'] = 0.0;
@@ -189,9 +189,9 @@ void Maps() {
   values4['eye-patch-height'] = 75;
 
   values4['tie-offset-1'] = 0.0;
-  values4['tie-offset-2'] = 120.0;
-  values4['tie-width'] = 100;
-  values4['tie-height'] = 100;
+  values4['tie-offset-2'] = 100.0;
+  values4['tie-width'] = 70;
+  values4['tie-height'] = 70;
 
   values4['pimple-offset-1'] = -10.0;
   values4['pimple-offset-2'] = 70.0;
@@ -233,10 +233,10 @@ void Maps() {
   values5['eye-patch-width'] = 90;
   values5['eye-patch-height'] = 90;
 
-  values5['tie-offset-1'] = -2.0;
-  values5['tie-offset-2'] = 110.0;
-  values5['tie-width'] = 100;
-  values5['tie-height'] = 100;
+  values5['tie-offset-1'] = 0.0;
+  values5['tie-offset-2'] = 90.0;
+  values5['tie-width'] = 70;
+  values5['tie-height'] = 70;
 
   values5['pimple-offset-1'] = 40.0;
   values5['pimple-offset-2'] = 40.0;
@@ -278,10 +278,10 @@ void Maps() {
   values6['eye-patch-width'] = 40;
   values6['eye-patch-height'] = 40;
 
-  values6['tie-offset-1'] = -2.0;
-  values6['tie-offset-2'] = 90.0;
-  values6['tie-width'] = 100;
-  values6['tie-height'] = 100;
+  values6['tie-offset-1'] = 0.0;
+  values6['tie-offset-2'] = 60.0;
+  values6['tie-width'] = 60;
+  values6['tie-height'] = 60;
 
   values6['pimple-offset-1'] = 15.0;
   values6['pimple-offset-2'] = 0.0;
@@ -324,9 +324,9 @@ void Maps() {
   values7['eye-patch-height'] = 90;
 
   values7['tie-offset-1'] = 7.0;
-  values7['tie-offset-2'] = 125.0;
-  values7['tie-width'] = 100;
-  values7['tie-height'] = 100;
+  values7['tie-offset-2'] = 90.0;
+  values7['tie-width'] = 70;
+  values7['tie-height'] = 70;
 
   values7['pimple-offset-1'] = -35.0;
   values7['pimple-offset-2'] = 10.0;
@@ -368,10 +368,10 @@ void Maps() {
   values8['eye-patch-width'] = 90;
   values8['eye-patch-height'] = 90;
 
-  values8['tie-offset-1'] = -10.0;
-  values8['tie-offset-2'] = 109.0;
-  values8['tie-width'] = 100;
-  values8['tie-height'] = 100;
+  values8['tie-offset-1'] = -5.0;
+  values8['tie-offset-2'] = 75.0;
+  values8['tie-width'] = 70;
+  values8['tie-height'] = 70;
 
   values8['pimple-offset-1'] = -35.0;
   values8['pimple-offset-2'] = 30.0;
@@ -414,9 +414,9 @@ void Maps() {
   values9['eye-patch-height'] = 90;
 
   values9['tie-offset-1'] = -5.0;
-  values9['tie-offset-2'] = 120.0;
-  values9['tie-width'] = 100;
-  values9['tie-height'] = 100;
+  values9['tie-offset-2'] = 85.0;
+  values9['tie-width'] = 50;
+  values9['tie-height'] = 50;
 
   values9['pimple-offset-1'] = -18.0;
   values9['pimple-offset-2'] = 30.0;
@@ -458,10 +458,10 @@ void Maps() {
   values10['eye-patch-width'] = 70;
   values10['eye-patch-height'] = 70;
 
-  values10['tie-offset-1'] = -5.0;
-  values10['tie-offset-2'] = 110.0;
-  values10['tie-width'] = 100;
-  values10['tie-height'] = 100;
+  values10['tie-offset-1'] = 0.0;
+  values10['tie-offset-2'] = 85.0;
+  values10['tie-width'] = 60;
+  values10['tie-height'] = 60;
 
   values10['pimple-offset-1'] = -18.0;
   values10['pimple-offset-2'] = 50.0;
@@ -504,9 +504,9 @@ void Maps() {
   values11['eye-patch-height'] = 70;
 
   values11['tie-offset-1'] = -5.0;
-  values11['tie-offset-2'] = 125.0;
-  values11['tie-width'] = 100;
-  values11['tie-height'] = 100;
+  values11['tie-offset-2'] = 90.0;
+  values11['tie-width'] = 70;
+  values11['tie-height'] = 70;
 
   values11['pimple-offset-1'] = 20.0;
   values11['pimple-offset-2'] = 30.0;
@@ -548,10 +548,10 @@ void Maps() {
   values12['eye-patch-width'] = 75;
   values12['eye-patch-height'] = 75;
 
-  values12['tie-offset-1'] = 0.0;
-  values12['tie-offset-2'] = 120.0;
-  values12['tie-width'] = 100;
-  values12['tie-height'] = 100;
+  values12['tie-offset-1'] = 3.0;
+  values12['tie-offset-2'] = 90.0;
+  values12['tie-width'] = 70;
+  values12['tie-height'] = 70;
 
   values12['pimple-offset-1'] = 20.0;
   values12['pimple-offset-2'] = 35.0;
@@ -594,9 +594,9 @@ void Maps() {
   values13['eye-patch-height'] = 75;
 
   values13['tie-offset-1'] = -5.0;
-  values13['tie-offset-2'] = 115.0;
-  values13['tie-width'] = 100;
-  values13['tie-height'] = 100;
+  values13['tie-offset-2'] = 90.0;
+  values13['tie-width'] = 70;
+  values13['tie-height'] = 70;
 
   values13['pimple-offset-1'] = -15.0;
   values13['pimple-offset-2'] = -25.0;
@@ -639,9 +639,9 @@ void Maps() {
   values14['eye-patch-height'] = 75;
 
   values14['tie-offset-1'] = -5.0;
-  values14['tie-offset-2'] = 130.0;
-  values14['tie-width'] = 100;
-  values14['tie-height'] = 100;
+  values14['tie-offset-2'] = 100.0;
+  values14['tie-width'] = 50;
+  values14['tie-height'] = 50;
 
   values14['pimple-offset-1'] = -15.0;
   values14['pimple-offset-2'] = 75.0;
